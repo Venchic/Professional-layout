@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -6,21 +12,28 @@
 .header {
     height: 75px;
     background-color: #222;
+    display: flex;
+}
+
+.wrapper-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-header {
     display: flex;
     align-items: center;
-    border: 1px solid #eee;
-}
-
-.wrapper {
-    display: flex;
-    align-items: center
+    //border: 1px solid #eee;
+    margin-left: 40px;
 }
 
 .buy-elements {
     margin-left: auto;
+}
+
+.buy-elements > a {
+    margin-left: 30px
 }
 
 input[type=search] {
@@ -29,7 +42,7 @@ input[type=search] {
     box-sizing: content-box;
     font-family: inherit;
     font-size: 100%;
-    width: 20px;
+    width: 30px;
     height: 30px;
 
     color: transparent;
@@ -44,17 +57,66 @@ input::-webkit-search-cancel-button {
 
 
 input[type=search]:hover {
-    background-color: #fff;
+    //background-color: #fff;
 }
 
 input[type=search]:focus {
-    width: 130px;
-    padding-left: 32px;
-    color: #000;
-    background-color: #fff;
+    width: 200px;
+    padding-left: 40px;
+    color: snow;
+    //background-color: #fff;
     cursor: auto;
 }
 
-.navigation {
-    background: url(../img/menu.svg);
+.block-1 {
+    height: 764px;
+    background-color: #F1E4E6;
+
+}
+
+.wrapper-block-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.block-1-info {
+    border-left: 12px solid #F16D7F;
+
+    padding-left: 20px;
+
+    height: 94px;
+    flex: 0 0 50%;
+}
+
+.block-1-img {
+    //display: flex;
+    //justify-content: flex-start;
+    flex: 0 0 50%;
+}
+
+.block-1 h1 {
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+    text-transform: uppercase;
+    width: 377px;
+}
+
+.block-1 h2 {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.block-1 span {
+    color: #F16D7F;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -8,20 +9,38 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container wrapper-header">
-            <a href="/">
+            <a href="/" class="logo">
                 <img src="img/logo.png" alt="Logo">
-                <span>Brand</span>
+                <span>Bran<span class="last-letter-span-logo">d</span></span>
             </a>
             <form action="#" class="header-form">
-                <button>Browse</button><input type="search" placeholder="Search for item...">
+                <button class="browse_search"><span>Browse </span></button><input type="search" placeholder="Search for item..."><button class="search_button"></button>
             </form>
             <div class="purchase-elements">
-                <button>basket</button>
-                <button>person</button>
+                <button class="basket">i</button>
+                <button class="account">My Account <span></span></button>
             </div>
-
         </div>
     </header>
+    <nav class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Man</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Accoseriese</a>
+        <a href="#">Featured</a>
+        <a href="#">Hot Deals</a>
+    </nav>
+    <section class="slider">
+        <div class="container wrapper-slider">
+            <div class="slider_text">
+                <h1>THE BRAND</h1>
+                <h2>OF LUXERIOUS <span>FASHION</span></h2>
+            </div>
+            <div class="clear"></div>
+            <img src="img/slider-1.png" alt="">
+        </div>
+    </section>
 </body></html>

@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
 }
 
 .container {
@@ -9,6 +14,9 @@ body {
     margin: 0 auto;
 }
 
+/*
+* Header
+*/
 .header {
     height: 100px;
     display: flex;
@@ -122,6 +130,9 @@ input[type=search]::placeholder {
 
 }
 
+/*
+* TopNav
+*/
 .topnav {
     display: flex;
     justify-content: center;
@@ -141,6 +152,9 @@ input[type=search]::placeholder {
     margin-right: 47px;
 }
 
+/*
+* Slider
+*/
 .slider {
     height: 613px;
     background-color: #e8e8e8;
@@ -148,16 +162,20 @@ input[type=search]::placeholder {
 }
 
 .wrapper-slider {
-    display: flex;
+    /* display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 
 .slider_text {
+    //display: block;
     border-left: 12px solid #F16D7F;
     padding-left: 20px;
     position: relative;
-    left: 120px;
+    z-index: 0;
+    top: -390px;
+    left: 0px;
     height: 94px;
     flex: 0 0 50%;
 }
@@ -171,7 +189,6 @@ input[type=search]::placeholder {
 }
 
 .slider_text h1 {
-
     font-style: normal;
     font-weight: 900;
     font-size: 60px;
@@ -182,7 +199,6 @@ input[type=search]::placeholder {
 }
 
 .slider_text h2 {
-    display: block;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -193,4 +209,69 @@ input[type=search]::placeholder {
 
 .slider_text span {
     color: #F16D7F;
+}
+
+/*
+* Categories
+*/
+.wrapper-categories {
+    display: grid;
+    //grid-template-columns: repeat(2, 1fr);
+    //grid-template-columns: 560px 560px;
+    //grid-template-rows: repeat(2, 560px);
+    grid-template-rows: 100%;
+    grid-gap: 20px;
+    height: 820px;
+    //margin-top: 98px;
+
+}
+
+.category-man {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    overflow: hidden;
+    /*width: 560px;
+    height: 540px;*/
+}
+
+.category-man img {
+    //max-width: 560px;
+}
+
+.category-woman {
+
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    overflow: hidden;
+    /*width: 560px;
+    height: 260px;*/
+}
+
+.category-accesories {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: ;
+    overflow: hidden;
+    /*  width: 560px;
+    height: 260px;*/
+}
+
+.category-kids {
+    //position: relative;
+    //top: -250px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    overflow: hidden;
+    /*width: 560px;
+    height: 540px;*/
+}
+
+.category-text {
+    display: grid;
+    //position: relative;
+    top: 66px;
+    z-index: 1000;
 }

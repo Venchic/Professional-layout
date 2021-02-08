@@ -68,12 +68,11 @@ body {
 }
 input[type=search] {
     border: 0px;
+    padding-left: 15px;
 }
 input[type=search]::placeholder {
     font-weight: 300;
     color: #a4a4a4;
-    padding-left: 15px;
-
 }
 .search_button {
     background: url(../img/search.png) 10px no-repeat;
@@ -81,7 +80,6 @@ input[type=search]::placeholder {
     border: 0px;
     border-left: 1px solid #e6e6e6;
     margin-left: auto;
-
 }
 .header-form button input {
     height: 36px;
@@ -211,58 +209,93 @@ input[type=search]::placeholder {
 /*
 * Categories
 */
-/* .wrapper-categories {
+.wrapper-categories {
     display: grid;
-    //grid-template-columns: repeat(2, 1fr);
-    //grid-template-columns: 560px 560px;
-    //grid-template-rows: repeat(2, 560px);
-    grid-template-rows: 100%;
     grid-gap: 20px;
-    height: 820px;
-    //margin-top: 98px;
-
+    margin-top: 98px;
 }
 
 .category-man {
     grid-column-start: 1;
     grid-row-start: 1;
-    grid-row-end: 4;
-    overflow: hidden;
-    /*width: 560px;
-    height: 540px;
+    grid-row-end: 3;
+    border: 0px;
 }
 
-
-
 .category-woman {
-
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    overflow: hidden;
-
 }
 
 .category-accesories {
     grid-column-start: 1;
-    grid-row-start: 4;
-    grid-row-end: ;
-    overflow: hidden;
-
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .category-kids {
-
     grid-column-start: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    overflow: hidden;
-
 }
 
-.category-text {
+/*
+* Features
+*/
+.features {
+    margin-top: 101px;
+}
+.features-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.features h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #222222;
+    //line-height: 16px;
+}
+.features span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9f9f9f;
+    line-height: 36px;
+}
+.wrapper-features {
+    margin-top: 60px;
     display: grid;
+    justify-content: center;
+    grid-template-columns: 260px 260px 260px 260px;
+    //grid-gap: 32px;
+    grid-column-gap: 32px;
+    grid-row-gap: 40px;
+}
+.feature-item a {
+    text-decoration: none;
 
-    top: 66px;
-    z-index: 1000;
-} */
+}
+.feature-item a:hover {
+
+}
+.feature-item p {
+    color: #222222;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.feature-item span {
+    text-decoration: none;
+    color: #f16d7f;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.feature-item figcaption{
+    padding-left: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

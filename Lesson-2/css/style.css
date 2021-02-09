@@ -277,8 +277,58 @@ input[type=search]::placeholder {
     text-decoration: none;
 
 }
-.feature-item a:hover {
+.feature-item {
+    position: relative;
+}
+.feature-item img {
+    opacity: 1.0;
+}
+.feature-item:hover {
+    box-shadow: 0px 6px 8px 6px rgba(34, 60, 80, 0.1);
+}
+.feature-item:hover::before {
+    /* background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.3; */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 90px;
+    background-color: rgba(0,0,0,0.5);  
+    z-index: 1;
+    transition: .5s ease;
+}
+.add_to_cart {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    content: '';
+    top: 98px;
+    left: 65px;
+    //background: url(../img/basket.png) 0px no-repeat;
+    //width: 23px;
+    border: 0px;
+    align-items: center;
+    opacity: 0;
+    padding: 8px 13px;
+    font-size: 13px;
+    font-weight: 700;
+    //line-height: 300px;
+    border: 1px solid #fff;
+    color: #ffffff !important;
+    z-index: 2;
+}
+.add_to_cart img {
+    color: #ffffff;
+    width: 23px;
+    margin-right: 5px;
 
+}
+.feature-item:hover .add_to_cart {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 .feature-item p {
     color: #222222;
@@ -286,7 +336,7 @@ input[type=search]::placeholder {
     font-size: 14px;
     text-transform: uppercase;
 }
-.feature-item span {
+.feature-item span:first-child {
     text-decoration: none;
     color: #f16d7f;
     font-weight: 700;

@@ -34,21 +34,21 @@
         <a href="#">Featured</a>
         <a href="#">Hot Deals</a>
     </nav>
-    <main>
+    <main class="product-page">
         <header class="page-header">
-            <div class="container wrapper-page-header">
+            <div class="container page-header__wrapper">
                 <h1>New Arrivals</h1>
-                <nav class="breadcrumbs">
+                <nav class="page-header__breadcrumbs">
                     <a href="">home</a> / <a href="#">men</a> / <a href="#"><span>new arrivals</span></a>
                 </nav>
             </div>
         </header>
-        <div class="container wrapper__product-page">
-            <nav class="product-nav">
+        <div class="container product-page__wrapper">
+            <nav class="product-page__product-nav">
                 <label>
-                    <input type='radio' name='product-nav__radio' checked="checked">
-                    <h2 class="product-nav__header">Category</h2>
-                    <div class="product-nav__links">
+                    <input type='radio' name='product-page__product-nav__radio' checked="checked">
+                    <h2 class="product-page__product-nav__header">Category</h2>
+                    <div class="product-page__product-nav__a">
                         <a href="#">Accesories</a>
                         <a href="#">Bags</a>
                         <a href="#">Denim</a>
@@ -65,9 +65,9 @@
                     </div>
                   </label>
                   <label>
-                    <input type='radio' name='product-nav__radio'>
-                    <h2 class="product-nav__header">Brand</h2>
-                    <div class="product-nav__links">
+                    <input type='radio' name='product-page__product-nav__radio'>
+                    <h2 class="product-page__product-nav__header">Brand</h2>
+                    <div class="product-page__product-nav__a">
                         <a href="#">link</a>
                         <a href="#">link</a>
                         <a href="#">link</a>
@@ -76,9 +76,9 @@
                     </div>
                   </label>
                   <label>
-                    <input type='radio' name='product-nav__radio'>
-                    <h2 class="product-nav__header">Designer</h2>
-                    <div class="product-nav__links">
+                    <input type='radio' name='product-page__product-nav__radio'>
+                    <h2 class="product-page__product-nav__header">Designer</h2>
+                    <div class="product-page__product-nav__a">
                         <a href="#">link</a>
                         <a href="#">link</a>
                         <a href="#">link</a>
@@ -87,22 +87,32 @@
                     </div>
                   </label>
             </nav>
-            <article class="product-page">
+            <article class="product-page__article">
                 <section class="top-filter-product">
                     <fieldset>
                         <legend>Trending Now</legend>
-                        <label for="">
-                            <input type="checkbox">
+                        <label for="bogemian">
+                            <input type="checkbox" id="bogemian">
                             <span>Bohemian </span>
-                            <input type="checkbox">
+                        </label>
+                        <label for="floral">
+                            <input type="checkbox" id="floral">
                             <span>Floral </span>
-                            <input type="checkbox">
+                        </label>
+                        <label for="lace">
+                            <input type="checkbox" id="lace">
                             <span>Lace </span>
-                            <input type="checkbox">
+                        </label>
+                        <label for="floral">
+                            <input type="checkbox" id="floral">
                             <span>Floral </span>
-                            <input type="checkbox">
+                        </label>
+                        <label for="lace">
+                            <input type="checkbox" id="lace">
                             <span>Lace </span>
-                            <input type="checkbox">
+                        </label>
+                        <label for="bohemian">
+                            <input type="checkbox" id="bohemian">
                             <span>Bohemian </span>
                         </label>
                     </fieldset>

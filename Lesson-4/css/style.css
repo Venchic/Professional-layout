@@ -150,7 +150,7 @@ input[type=search]::placeholder {
 
     /* padding: 65px 0; */
 }
-.wrapper-page-header {
+.page-header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -165,7 +165,7 @@ input[type=search]::placeholder {
     margin: 65px 0px;
 
 }
-.breadcrumbs a {
+.page-header__breadcrumbs a {
     font-size: 14px;
     line-height: 20px;
     color: #636363;
@@ -173,7 +173,7 @@ input[type=search]::placeholder {
     text-transform: uppercase;
     text-decoration: none;
 }
-.breadcrumbs span {
+.page-header__breadcrumbs span {
     color: #f17687;
 }
 /*
@@ -417,25 +417,25 @@ input[type=search]::placeholder {
 /*
 * Product-page
 */
-.wrapper__product-page {
+.product-page__wrapper {
     margin-top: 59px;
     display: flex;
     
     height: 1642px;
 }
-.product-nav {
+.product-page__product-nav {
     height: 53px;
     width: 243px;
     margin-right: 50px;
 }
-.product-nav__header {
+.product-page__product-nav__header {
     border-bottom: 1px solid #ebebeb;
     border-left: 5px solid #ef5b70;
 }
-.product-nav__header:not(:last-of-type) {
+.product-page__product-nav__header:not(:last-of-type) {
     margin-bottom: 18px;
 }
-.product-nav h2 {
+.product-page__product-nav h2 {
     font-size: 14px;
     line-height: 20px;
     color: #ef5b70;
@@ -445,7 +445,7 @@ input[type=search]::placeholder {
     padding-bottom: 14px;
     padding-left: 9px;
 }
-.product-nav a {
+.product-page__product-nav a {
     display: block;
     font-size: 14px;
     line-height: 33px;
@@ -455,20 +455,20 @@ input[type=search]::placeholder {
     margin-left: 17px;
     margin-top: 22px;
 }
-.product-nav a:last-of-type{
+.product-page__product-nav a:last-of-type{
     margin-bottom: 41px;
 }
-.product-nav input {
+.product-page__product-nav input {
     display: none;
 }
-.product-nav__links {
+.product-page__product-nav__a {
     display: none;
 }
-.product-nav input:checked ~ .product-nav__links {
+.product-page__product-nav input:checked ~ .product-page__product-nav__a {
     display: block;
 }
 
-.product-page {
+.product-page__article {
     display: flex;
 }
 .top-filter-product{

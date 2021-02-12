@@ -467,12 +467,174 @@ input[type=search]::placeholder {
 .product-page__product-nav input:checked ~ .product-page__product-nav__a {
     display: block;
 }
-
-.product-page__article {
+    /* Top Filter */
+.top-filter-product {
     display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 41px;
 }
-.top-filter-product{
+.top-filter-product legend{
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6f6e6e;
+    font-weight: 700;                    
+}
+    /* Trending Now */
+.top-filter-product__fieldset_trending-now{
+    width: 187px;
+}
+.top-filter-product__fieldset_trending-now__div-item {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+.top-filter-product__fieldset_trending-now__div-item:not(:last-of-type) {
+    margin-top: 26px;
+}
+.top-filter-product__fieldset_trending-now__div-item:not(:first-of-type) {
+    margin-top: 15px;
+}
+.top-filter-product__fieldset_trending-now input {
+    display: none;
+}
+.top-filter-product__fieldset_trending-now__div-item span {
+    font-size: 14px;
+    line-height: 26px;
+    color: #6f6e6e;
+    font-weight: 400;
+}
+.top-filter-product__fieldset_trending-now input:checked ~ span{
+    /* background-color: red; */
+    /* border-bottom: 1px solid red; */
+    color: #ef5b70;
+}
+.top-filter-product__fieldset_trending-now__div-item__span-center {
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    padding: 0 16px;
+    margin: 0 16px;
+}
+    /* Size */
+.top-filter-product__fieldset_size {
+    width: 235px;
+    margin-left: 103px;
+}
+.top-filter-product__fieldset_size__div-item {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 46px 46px 46px 46px;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-gap: 23px;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+.top-filter-product__fieldset_size__div-item:not(:last-of-type) {
+    margin-top: 24px;
+}
+.top-filter-product__fieldset_size__div-item:not(:first-of-type) {
+    margin-top: 13px;
+}
+.top-filter-product__fieldset_size__div-item label {
+    /* display: inline-block; */
+    align-items: center;
+}
+.top-filter-product__fieldset_size__div-item input[type="checkbox"] {
+    display: none;
+}
+.top-filter-product__fieldset_size__div-item label:before {
+    display: inline-flex;
+    content: " ";
+    width: 11px;
+    height: 11px;
+    border: 2px solid #ebebeb;
+    /* margin-right: 10px; */
+  }
+.top-filter-product__fieldset_size__div-item input[type=checkbox]:checked ~ 
+.top-filter-product__fieldset_size__div-item label:before {
+    content: "x";
+    color: #222222;
+  }
+.top-filter-product__fieldset_size__div-item span {
+    font-size: 14px;
+    line-height: 26px;
+    color: #6f6e6e;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    margin-left: 6px;
+} 
+    /* Price */
+.top-filter-product__fieldset_price {
+    width: 262px;
+    margin-left: 58px;
+}
+
+.slider1 {
+    -webkit-appearance: none;
+    width: 262px;
+    height: 25px;
+    position: absolute;
+    background: #a4a4a4;
+    outline: none;
+}
+
+.slider1 input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 25%;
+    top: 15px;
+    width: 50%;
+    outline: none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.slider1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    background: #ea4550;
+    cursor: pointer;
+
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+.slider1::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ea4550;
+    cursor: pointer;
+
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: 9px;
+}
+
+.slider1 input::-moz-range-track {
+    position: relative;
+    z-index: -1;
+    border: 0;
+}
+.slider1 input:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+
+}
+.slider1 input[type=range]::-moz-focus-outer {
+border: 0;
 }
 .sortby-product{}
 .list-products {}

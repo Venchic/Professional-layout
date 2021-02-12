@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -89,32 +90,82 @@
             </nav>
             <article class="product-page__article">
                 <section class="top-filter-product">
-                    <fieldset>
+                    <fieldset class="top-filter-product__fieldset_trending-now">
                         <legend>Trending Now</legend>
-                        <label for="bogemian">
-                            <input type="checkbox" id="bogemian">
-                            <span>Bohemian </span>
-                        </label>
-                        <label for="floral">
-                            <input type="checkbox" id="floral">
-                            <span>Floral </span>
-                        </label>
-                        <label for="lace">
-                            <input type="checkbox" id="lace">
-                            <span>Lace </span>
-                        </label>
-                        <label for="floral">
-                            <input type="checkbox" id="floral">
-                            <span>Floral </span>
-                        </label>
-                        <label for="lace">
-                            <input type="checkbox" id="lace">
-                            <span>Lace </span>
-                        </label>
-                        <label for="bohemian">
-                            <input type="checkbox" id="bohemian">
-                            <span>Bohemian </span>
-                        </label>
+                        <div class="top-filter-product__fieldset_trending-now__div-item">
+                            <label for="bohemian-1">
+                                <input type="checkbox" id="bohemian-1">
+                                <span>Bohemian</span>
+                            </label>
+                            <label for="floral-1">
+                                <input type="checkbox" id="floral-1">
+                                <span class="top-filter-product__fieldset_trending-now__div-item__span-center">Floral</span>
+                            </label>
+                            <label for="lace-1">
+                                <input type="checkbox" id="lace-1">
+                                <span>Lace</span>
+                            </label>
+                        </div>
+                        <div class="top-filter-product__fieldset_trending-now__div-item">
+                            <label for="floral-2">
+                                <input type="checkbox" id="floral-2">
+                                <span>Floral</span>
+                            </label>
+
+                            <label for="lace-2">
+                                <input type="checkbox" id="lace-2">
+                                <span class="top-filter-product__fieldset_trending-now__div-item__span-center">Lace</span>
+                            </label>
+
+                            <label for="bohemian-2">
+                                <input type="checkbox" id="bohemian-2">
+                                <span>Bohemian</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="top-filter-product__fieldset_size">
+                        <legend>Size</legend>
+                        <div class="top-filter-product__fieldset_size__div-item">
+                            <label for="size-xxs">
+                                <input type="checkbox" id="size-xxs">
+                                <span>xxs</span>
+                            </label>
+
+                            <label for="size-xs">
+                                <input type="checkbox" id="size-xs">
+                                <span>xs</span>
+                            </label>
+
+                            <label for="size-s">
+                                <input type="checkbox" id="size-s">
+                                <span>s</span>
+                            </label>
+                            <label for="size-m">
+                                <input type="checkbox" id="size-m">
+                                <span>m</span>
+                            </label>
+                        </div>
+                        <div class="top-filter-product__fieldset_size__div-item">
+                            <label for="size-l">
+                                <input type="checkbox" id="size-l">
+                                <span>l</span>
+                            </label>
+
+                            <label for="size-xl">
+                                <input type="checkbox" id="size-xl">
+                                <span>xl</span>
+                            </label>
+
+                            <label for="size-xxl">
+                                <input type="checkbox" id="size-xxl">
+                                <span>xxl</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="top-filter-product__fieldset_price">
+                        <legend>Price</legend>
+                        <label for="amount">Price range:</label>
+                        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
                     </fieldset>
                 </section>
                 <section class="sortby-product"></section>
@@ -232,4 +283,7 @@
                 </div>
             </footer>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/rangePrice.js"></script>
 </body></html>

@@ -18,11 +18,11 @@
                 <span>Bran<span class="last-letter-span-logo">d</span></span>
             </a>
             <form action="#" class="header-form">
-                <button class="browse_search"><span>Browse </span></button><input type="search" placeholder="Search for item..."><button class="search_button"></button>
+                <button class="browse_search"><span>Browse &#9660;</span></button><input type="search" placeholder="Search for item..."><button class="search_button"></button>
             </form>
             <div class="purchase-elements">
                 <button class="basket"></button>
-                <button class="account">My Account <span></span></button>
+                <button class="account">My Account <span>&#9660;</span></button>
             </div>
         </div>
     </header>
@@ -125,62 +125,245 @@
                     </fieldset>
                     <fieldset class="top-filter-product__fieldset_size">
                         <legend>Size</legend>
-                        <div class="top-filter-product__fieldset_size__div-item">
-                            <label for="size-xxs">
+                        <div class="size_item-block">
+                            <div class="size_item">
                                 <input type="checkbox" id="size-xxs">
-                                <span>xxs</span>
-                            </label>
-
-                            <label for="size-xs">
+                                <label for="size-xxs">xxs</label>
+                            </div>    
+                            <div class="size_item">
                                 <input type="checkbox" id="size-xs">
-                                <span>xs</span>
-                            </label>
-
-                            <label for="size-s">
+                                <label for="size-xs">xs</label>
+                            </div>
+                            <div class="size_item">
                                 <input type="checkbox" id="size-s">
-                                <span>s</span>
-                            </label>
-                            <label for="size-m">
-                                <input type="checkbox" id="size-m">
-                                <span>m</span>
-                            </label>
-                        </div>
-                        <div class="top-filter-product__fieldset_size__div-item">
-                            <label for="size-l">
+                                <label for="size-s">s</label>
+                            </div>
+                            <div class="size_item">
+                                <input type="checkbox" id="size-m" class="size_item">
+                                <label for="size-m">m</label>
+                            </div>
+                            <div class="size_item">
                                 <input type="checkbox" id="size-l">
-                                <span>l</span>
-                            </label>
-
-                            <label for="size-xl">
+                                <label for="size-l">l</label>
+                            </div>
+                            <div class="size_item">
                                 <input type="checkbox" id="size-xl">
-                                <span>xl</span>
-                            </label>
-
-                            <label for="size-xxl">
+                                <label for="size-xl">xl</label>
+                            </div>
+                            <div class="size_item">
                                 <input type="checkbox" id="size-xxl">
-                                <span>xxl</span>
-                            </label>
+                                <label for="size-xxl">xxl</label>
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset class="top-filter-product__fieldset_price">
                         <legend>Price</legend>
-                        <label for="amount">Price range:</label>
-                        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                        <input type="range">
+                        <div class="top-filter-product__fieldset_price_block">
+                            <span>&#36;52</span>
+                            <span>&#36;400</span>
+                        </div>
                     </fieldset>
                 </section>
-                <section class="sortby-product"></section>
+                <section class="sortby-product">
+                    <div class="sortby_item">
+                        <span>Sort By</span><button>Name <i>&#9660;</i></button>
+                    </div>
+                    <div class="sortby_item">
+                        <span>Show</span><button>9 <i>&#9660;</i></button>
+                    </div>
+                </section>
                 <section class="list-products">
-                    <div class="product-item"></div>
-                    <div class="product-item"></div>
-                    <div class="product-item"></div>
-                    <div class="product-item"></div>
-                    <div class="product-item"></div>
-                    <div class="product-item"></div>
-                    <div class="product-item"></div>
-                    <div class="product-item"></div>
-                    <div class="product-item"></div>
+                    <article class="wrapper-product">
+                        <figure class="product-item">
+                            <a href="">
+                                <img src="img/products/man/1.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="">
+                                <img src="img/products/man/2.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/3.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/4.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/5.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/6.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/7.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/8.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                        <a href="#" class="add_to_cart-product">
+                                            <img width="23px" src="img/basket-white.png" alt=""> Add to Cart
+                                        </a>
+                                        <a href="#" class="reload-product">
+                                            <img width="22px" src="img/reload.png" alt="Reload">
+                                        </a>
+                                        <a href="#" class="like-product">
+                                            <img width="16px" src="img/like.png" alt="Like">
+                                        </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/9.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        </article>
+                </section>
+                <section class="pagination-product">
+                    <ul>
+                        <li><a class="inctive-transition" href="#">&lt;</a></li>
+                        <li><a class="active-page" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">.....</a></li>
+                        <li><a href="#">20</a></li>
+                        <li><a class="active-transition" href="#">&gt;</a></li>
+                      </ul>
+                      <button>View All</button>
                 </section>
             </article>
+
         </div>
     </main>
 
@@ -283,7 +466,4 @@
                 </div>
             </footer>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/rangePrice.js"></script>
 </body></html>

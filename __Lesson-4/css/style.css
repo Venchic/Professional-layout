@@ -607,6 +607,7 @@ input[type=range]::-webkit-slider-runnable-track {
     background-color: #f0f0f0;
     border-radius: 3px;
 }
+
 input[type=range]::-moz-range-track {
     height: 6px;
     /* width: 262px; */

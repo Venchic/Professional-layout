@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/temp.css">
+    <title>Document</title>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+</head>
+<body>
+
+
+
+    <fieldset class="top-filter-product__fieldset_price">
+        <div id="polzunok"></div>
+        <b>Значение ползунка: <span style="color:green" id="result-polzunok"></span></b>
+        <script>
+            $("#polzunok").slider({
+                animate: "slow",
+                range: true,    
+                values: [ 10, 65 ],
+                slide : function(event, ui) {    
+                    $("#result-polzunok").text( "от " + ui.values[ 0 ] + " до " + ui.values[ 1 ] );        
+                }
+            });
+            $( "#result-polzunok" ).text("от " + $("#polzunok").slider("values", 0) + " до " + $("#polzunok").slider("values", 1));
+        </script>
+    </fieldset>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <!-- <script defer src="js/rangePrice.js"></script> -->
+</body>
+</html>

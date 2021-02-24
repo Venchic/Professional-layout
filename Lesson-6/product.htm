@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container wrapper-header">
+            <a href="/" class="logo">
+                <img src="img/logo.png" alt="Logo">
+                <span>Bran<span class="last-letter-span-logo">d</span></span>
+            </a>
+            <form action="#" class="header-form">
+                <button class="browse_search"><span>Browse &#9660;</span></button><input type="search" placeholder="Search for item..."><button class="search_button"></button>
+            </form>
+            <div class="purchase-elements">
+                <button class="basket"></button>
+                <button class="account">My Account <span>&#9660;</span></button>
+            </div>
+        </div>
+    </header>
+    <nav class="topnav">
+        <a href="index.htm">Home</a>
+        <a href="product.htm" class="topnav__active">Man</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Accoseriese</a>
+        <a href="#">Featured</a>
+        <a href="#">Hot Deals</a>
+    </nav>
+    <main class="product-page">
+        <header class="page-header">
+            <div class="container page-header__wrapper">
+                <h1>New Arrivals</h1>
+                <nav class="page-header__breadcrumbs">
+                    <a href="">home</a> / <a href="#">men</a> / <a href="#"><span>new arrivals</span></a>
+                </nav>
+            </div>
+        </header>
+        <div class="container product-page__wrapper">
+            <nav class="product-page__product-nav">
+                <label>
+                    <input type='radio' name='product-page__product-nav__radio' checked="checked">
+                    <h2 class="product-page__product-nav__header">Category</h2>
+                    <div class="product-page__product-nav__a">
+                        <a href="#">Accesories</a>
+                        <a href="#">Bags</a>
+                        <a href="#">Denim</a>
+                        <a href="#">Hoodies & Sweatshirts</a>
+                        <a href="#">Jackets & Coats</a>
+                        <a href="#">Pants</a>
+                        <a href="#">Polos</a>
+                        <a href="#">Shirts</a>
+                        <a href="#">Shoes</a>
+                        <a href="#">Shorts</a>
+                        <a href="#">Sweaters & Knits</a>
+                        <a href="#">T-Shirt</a>
+                        <a href="#">Tanks</a>
+                    </div>
+                  </label>
+                  <label>
+                    <input type='radio' name='product-page__product-nav__radio'>
+                    <h2 class="product-page__product-nav__header">Brand</h2>
+                    <div class="product-page__product-nav__a">
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                    </div>
+                  </label>
+                  <label>
+                    <input type='radio' name='product-page__product-nav__radio'>
+                    <h2 class="product-page__product-nav__header">Designer</h2>
+                    <div class="product-page__product-nav__a">
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                        <a href="#">link</a>
+                    </div>
+                  </label>
+            </nav>
+            <article class="product-page__article">
+                <section class="top-filter-product">
+                    <fieldset class="top-filter-product__fieldset_trending-now">
+                        <legend>Trending Now</legend>
+                        <div class="top-filter-product__fieldset_trending-now__div-item">
+                            <label for="bohemian-1">
+                                <input type="checkbox" id="bohemian-1">
+                                <span>Bohemian</span>
+                            </label>
+                            <label for="floral-1">
+                                <input type="checkbox" id="floral-1">
+                                <span class="top-filter-product__fieldset_trending-now__div-item__span-center">Floral</span>
+                            </label>
+                            <label for="lace-1">
+                                <input type="checkbox" id="lace-1">
+                                <span>Lace</span>
+                            </label>
+                        </div>
+                        <div class="top-filter-product__fieldset_trending-now__div-item">
+                            <label for="floral-2">
+                                <input type="checkbox" id="floral-2">
+                                <span>Floral</span>
+                            </label>
+
+                            <label for="lace-2">
+                                <input type="checkbox" id="lace-2">
+                                <span class="top-filter-product__fieldset_trending-now__div-item__span-center">Lace</span>
+                            </label>
+
+                            <label for="bohemian-2">
+                                <input type="checkbox" id="bohemian-2">
+                                <span>Bohemian</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="top-filter-product__fieldset_size">
+                        <legend>Size</legend>
+                        <div class="size_item-block">
+                            <div class="size_item">
+                                <input type="checkbox" id="size-xxs">
+                                <label for="size-xxs">xxs</label>
+                            </div>    
+                            <div class="size_item">
+                                <input type="checkbox" id="size-xs">
+                                <label for="size-xs">xs</label>
+                            </div>
+                            <div class="size_item">
+                                <input type="checkbox" id="size-s">
+                                <label for="size-s">s</label>
+                            </div>
+                            <div class="size_item">
+                                <input type="checkbox" id="size-m" class="size_item">
+                                <label for="size-m">m</label>
+                            </div>
+                            <div class="size_item">
+                                <input type="checkbox" id="size-l">
+                                <label for="size-l">l</label>
+                            </div>
+                            <div class="size_item">
+                                <input type="checkbox" id="size-xl">
+                                <label for="size-xl">xl</label>
+                            </div>
+                            <div class="size_item">
+                                <input type="checkbox" id="size-xxl">
+                                <label for="size-xxl">xxl</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="top-filter-product__fieldset_price">
+                        <legend>Price</legend>
+                        <input type="range">
+                        <div class="top-filter-product__fieldset_price_block">
+                            <span>&#36;52</span>
+                            <span>&#36;400</span>
+                        </div>
+                    </fieldset>
+                </section>
+                <section class="sortby-product">
+                    <div class="sortby_item">
+                        <span>Sort By</span><button>Name <i>&#9660;</i></button>
+                    </div>
+                    <div class="sortby_item">
+                        <span>Show</span><button>9 <i>&#9660;</i></button>
+                    </div>
+                </section>
+                <section class="list-products">
+                    <article class="wrapper-product">
+                        <figure class="product-item">
+                            <a href="">
+                                <img src="img/products/man/1.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="">
+                                <img src="img/products/man/2.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/3.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/4.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/5.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/6.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/7.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/8.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                        <a href="#" class="add_to_cart-product">
+                                            <img width="23px" src="img/basket-white.png" alt=""> Add to Cart
+                                        </a>
+                                        <a href="#" class="reload-product">
+                                            <img width="22px" src="img/reload.png" alt="Reload">
+                                        </a>
+                                        <a href="#" class="like-product">
+                                            <img width="16px" src="img/like.png" alt="Like">
+                                        </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        <figure class="product-item">
+                            <a href="#">
+                                <img src="img/products/man/9.png" alt="Mango  People  T-shirt">
+                                <figcaption>
+                                    <p>Mango  People  T-shirt</p>
+                                    <span>&#36; 52.00</span>
+                                    <a href="#" class="add_to_cart-product">
+                                        <img width="23px" src="img/basket-white.png" alt="">
+                                         Add to Cart
+                                        </a>
+                                    <a href="#" class="reload-product">
+                                        <img width="22px" src="img/reload.png" alt="Reload">
+                                    </a>
+                                    <a href="#" class="like-product">
+                                        <img width="16px" src="img/like.png" alt="Like">
+                                    </a>
+                                </figcaption>
+                            </a>
+                        </figure>
+                        </article>
+                </section>
+                <section class="pagination-product">
+                    <ul>
+                        <li><a class="inctive-transition" href="#">&lt;</a></li>
+                        <li><a class="active-page" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">.....</a></li>
+                        <li><a href="#">20</a></li>
+                        <li><a class="active-transition" href="#">&gt;</a></li>
+                      </ul>
+                      <button>View All</button>
+                </section>
+            </article>
+
+        </div>
+    </main>
+    <section class="features-pages">
+        <div class="container wrapper-features-pages">
+            <article class="feature-box-pages">
+                <div class="feature-box-item-pages">
+                    <img src="img/features/free-delivery.png" alt="Free Delivery">
+                    <h3>Free Delivery</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="feature-box-item-pages">
+                    <img src="img/features/sales-and-discounts.png" alt="Sales & discounts">
+                    <h3>Sales & discounts</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="feature-box-item-pages">
+                    <img src="img/features/quality-assurance.png" alt="Quality assurance">
+                    <h3>Quality assurance</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container wrapper-subscribe">
+            <article class="reviews">
+                <img src="img/subscribe/person-1.png" alt="">
+                <p class="review-autor_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,  a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium"</p>
+                <span class="review-autor_name">
+                    Bin Burhan
+                </span>
+                <span class="review-autor-address">
+                    Dhaka, Bd
+                </span>
+                <div class="reviews-slider">
+                    <span class="reviews-slider-element"></span>
+                    <span class="reviews-slider-element slider-element-active"></span>
+                    <span class="reviews-slider-element"></span>
+                </div>
+            </article>
+            <aside class="form-subscribe">
+                <p><span>Subscribe</span>FOR OUR NEWLETTER AND PROMOTION</p>
+                <form>
+                    <input type="email" value="Enter Your Email"><button>Subscribe</button>
+                </form>
+            </aside>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <section class="wrapper-footer">
+                <article class="about-us">
+                    <a href="/" class="logo">
+                        <img src="img/logo.png" alt="Logo">
+                        <span>Bran<span class="last-letter-span-logo">d</span></span>
+                    </a>
+                    <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p>
+                    <p>Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                </article>
+                <aside class="botnav">
+                    <nav class="botnav-item company">
+                        <a href="#" class="head-link">Company</a>
+                        <a href="#">Home</a>
+                        <a href="#">Shop</a>
+                        <a href="#">About</a>
+                        <a href="#">How It Works</a>
+                        <a href="#">Contact</a>
+                    </nav>
+                    <nav class="botnav-item info">
+                        <a href="#" class="head-link">Information</a>
+                        <a href="#">Tearms & Condition</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">How to Buy</a>
+                        <a href="#">How to Sell</a>
+                        <a href="#">Promotion</a>
+                    </nav>
+                    <nav class="botnav-item shopcat">
+                        <a href="#" class="head-link">Shop Category</a>
+                        <a href="#">Men</a>
+                        <a href="#">Women</a>
+                        <a href="#">Child</a>
+                        <a href="#">Apparel</a>
+                        <a href="#">Brows All</a>
+                    </nav>
+                </aside>
+            </section>
+        </div>
+            <footer class="copy-social">
+                <div class="container wrapper-copy-social">
+                    <p>&copy; 2021 Brand All Right reserved</p>
+                    <div class="social">
+                        <a href="#"><img src="img/social/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="img/social/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="img/social/in.png" alt="LinkIn"></a>
+                        <a href="#"><img src="img/social/pinterest.png" alt="Pinterest"></a>
+                        <a href="#"><img src="img/social/google-plus.png" alt="Google +"></a>
+                    </div>
+                </div>
+            </footer>
+    </footer>
+</body></html>

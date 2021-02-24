@@ -35,17 +35,17 @@
         <a href="#">Featured</a>
         <a href="#">Hot Deals</a>
     </nav>
+    <div class="page-header">
+        <div class="container page-header__wrapper">
+            <h1>New Arrivals</h1>
+            <nav class="page-header__breadcrumbs">
+                <a href="">home</a> / <a href="#">men</a> / <a href="#"><span>new arrivals</span></a>
+            </nav>
+        </div>
+    </div>
     <main class="product-page">
-        <header class="page-header">
-            <div class="container page-header__wrapper">
-                <h1>New Arrivals</h1>
-                <nav class="page-header__breadcrumbs">
-                    <a href="">home</a> / <a href="#">men</a> / <a href="#"><span>new arrivals</span></a>
-                </nav>
-            </div>
-        </header>
         <div class="container product-page__wrapper">
-            <nav class="product-page__product-nav">
+            <div class="product-page__product-nav">
                 <label>
                     <input type='radio' name='product-page__product-nav__radio' checked="checked">
                     <h2 class="product-page__product-nav__header">Category</h2>
@@ -87,9 +87,9 @@
                         <a href="#">link</a>
                     </div>
                   </label>
-            </nav>
-            <article class="product-page__article">
-                <section class="top-filter-product">
+            </div>
+            <div class="product-page__article">
+                <form class="top-filter-product">
                     <fieldset class="top-filter-product__fieldset_trending-now">
                         <legend>Trending Now</legend>
                         <div class="top-filter-product__fieldset_trending-now__div-item">
@@ -164,17 +164,17 @@
                             <span>&#36;400</span>
                         </div>
                     </fieldset>
-                </section>
-                <section class="sortby-product">
+                </form>
+                <div class="sortby-product">
                     <div class="sortby_item">
                         <span>Sort By</span><button>Name <i>&#9660;</i></button>
                     </div>
                     <div class="sortby_item">
                         <span>Show</span><button>9 <i>&#9660;</i></button>
                     </div>
-                </section>
-                <section class="list-products">
-                    <article class="wrapper-product">
+                </div>
+                <div class="list-products">
+                    <div class="wrapper-product">
                         <figure class="product-item">
                             <a href="">
                                 <img src="img/products/man/1.png" alt="Mango  People  T-shirt">
@@ -346,8 +346,8 @@
                             </a>
                         </figure>
                         </article>
-                </section>
-                <section class="pagination-product">
+                </div>
+                <div class="pagination-product">
                     <ul>
                         <li><a class="inctive-transition" href="#">&lt;</a></li>
                         <li><a class="active-page" href="#">1</a></li>
@@ -361,8 +361,8 @@
                         <li><a class="active-transition" href="#">&gt;</a></li>
                       </ul>
                       <button>View All</button>
-                </section>
-            </article>
+                </div>
+            </div>
 
         </div>
     </main>

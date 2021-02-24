@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
@@ -35,48 +36,117 @@
         <a href="#">Featured</a>
         <a href="#">Hot Deals</a>
     </nav>
-    <main class="product-page">
-        <header class="page-header">
-            <div class="container page-header__wrapper">
-                <h1>New Arrivals</h1>
-                <nav class="page-header__breadcrumbs">
-                    <a href="">home</a> / <a href="#">men</a> / <a href="#"><span>new arrivals</span></a>
-                </nav>
-            </div>
-        </header>
-        <section class="container cart">
-            <div class="cart-title">
-                <span>Product Details</span>
-                <span></span>
-                <span>Unite Price</span>
-                <span>Quantity</span>
-                <span>Shipping</span>
-                <span>Subtotal</span>
-                <span>Action</span>
-            </div>
-            <div class="cart-item">
-                <img src="" alt="">
-                <div class="cart-item__product">
-                    <h2 class="cart-item__product_name">Mango People T-Shirt</h2>
-                    <span class="cart-item__product_color">Color: <span>Red</span></span>
-                    <span class="cart-item__product_size">Size: <span>Xll</span></span>
+    <div class="page-header">
+        <div class="container page-header__wrapper">
+            <h1>New Arrivals</h1>
+            <nav class="page-header__breadcrumbs">
+                <a href="">home</a> / <a href="#">men</a> / <a href="#"><span>new arrivals</span></a>
+            </nav>
+        </div>
+    </div>
+    <main class="shopping_cart">
+        <section class="container">
+            <div class="cart">
+                <div class="cart-title">
+                    <span class="cart-item__product">Product Details</span>
+                    <span class="cart-item__price">Unite Price</span>
+                    <span class="cart-item__quantity">Quantity</span>
+                    <span class="cart-item__shipping">Shipping</span>
+                    <span class="cart-item__subtotal">Subtotal</span>
+                    <span class="cart-item__action">Action</span>
                 </div>
-                <span class="cart-item__price">$150</span>
-                <input class="cart-item__quantity" value="2">
-                <span class="cart-item__shipping">Free</span>
-                <span class="cart-item__subtotal">$300</span>
-                <button class="cart-item__action">+</button>
+                <div class="cart-item">
+                    <div class="cart-item__product">
+                        <img src="img/cart/cart_item_1.png" alt="Mango People T-Shirt">
+                        <div class="cart-item__product_info">
+                            <h2>Mango People T-Shirt</h2>
+                            <span>Color: <span>Red</span></span>
+                            <span>Size: <span>Xll</span></span>
+                        </div>
+                    </div>
+                    <span class="cart-item__price">$150</span>
+                    <form class="cart-item__quantity">
+                        <input value="2">
+                    </form>
+                    <span class="cart-item__shipping">Free</span>
+                    <span class="cart-item__subtotal">$300</span>
+                    <span class="cart-item__action">
+                        <a href="#"><i class="fas fa-times-circle"></i></a>
+                    </span>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-item__product">
+                        <img src="img/cart/cart_item_2.png" alt="Mango People T-Shirt">
+                        <div class="cart-item__product_info">
+                            <h2 class="cart-item__product_name">Mango People T-Shirt</h2>
+                            <span class="cart-item__product_color">Color: <span>Red</span></span>
+                            <span class="cart-item__product_size">Size: <span>Xll</span></span>
+                        </div>
+                    </div>
+                    <span class="cart-item__price">$150</span>
+                    <form class="cart-item__quantity">
+                        <input value="2">
+                    </form>
+                    <span class="cart-item__shipping">Free</span>
+                    <span class="cart-item__subtotal">$300</span>
+                    <span class="cart-item__action">
+                        <a href="#"><i class="fas fa-times-circle"></i></a>
+                    </span>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-item__product">
+                        <img src="img/cart/cart_item_3.png" alt="Mango People T-Shirt">
+                        <div class="cart-item__product_info">
+                            <h2 class="cart-item__product_name">Mango People T-Shirt</h2>
+                            <span class="cart-item__product_color">Color: <span>Red</span></span>
+                            <span class="cart-item__product_size">Size: <span>Xll</span></span>
+                        </div>
+                    </div>
+                    <span class="cart-item__price">$150</span>
+                    <form class="cart-item__quantity">
+                        <input value="2">
+                    </form>
+                    <span class="cart-item__shipping">Free</span>
+                    <span class="cart-item__subtotal">$300</span>
+                    <span class="cart-item__action">
+                        <a href="#"><i class="fas fa-times-circle"></i></a>
+                    </span>
+                </div>
+                <form>
+                    <button>Clear Shopping Cart</button>
+                    <button>Continue Shopping</button>
+                </form>
             </div>
-            <form>
-                <button></button>
-                <button></button>
-            </form>
+
             <div class="address_discount_total">
-                <div class="address"></div>
-                <div class="discount"></div>
-                <div class="total"></div>
+                <div class="address">
+                    <form>
+                        <legend>Shipping Adress</legend>
+                        <input type="text" placeholder="Bangladesh">
+                        <i class="fas fa-caret-down"></i>
+                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="Postcode / Zip">
+                        
+                    </form>
+                </div>
+                <div class="discount">
+                    <form>
+                        <legend>coupon discount</legend>
+                        <span>Enter your coupon code if you have one</span>
+                        <input type="text" placeholder="State">
+                        <button>Apply coupon</button>
+                    </form>
+                </div>
+                <div class="total">
+                    <span class="total__sub">Sub total<span>$900</span></span>
+                    <span class="total__grand">GRAND TOTAL<span>$900</span></span>
+                    <span class="total__line"></span>
+                    <button>proceed to checkout</button>
+                </div>
             </div>
+            <button class="get_quote">get a quote</button>
         </section>
+    </main>
         <section class="features-pages">
             <div class="container wrapper-features-pages">
                 <article class="feature-box-pages">
